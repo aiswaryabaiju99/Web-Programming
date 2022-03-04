@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>javascript</title>
+</head>
+
+<body>
+
+<p>Enter The Number</p>
+<form>
+<input type="text" name="number" id="num"></input>
+<button onclick="myFunction()">CLICK HERE</button>
+</form>
+<p id="pi"> </p>
+<p id="round"> </p> 
+<p id="power"> </p> 
+<p id="square"> </p>
+<p id="absolute"> </p> 
+<p id="cell"> </p> 
+<p id="floor"> </p> 
+<p id="min"> </p> 
+<p id="max"> </p> 
+<p id="random"> </p> 
+
+<script type="text/javascript" language="javascript">
+
+function myFunction(){
+
+
+
+var number = document.getElementById("num").value;
+document.write("<br>NUMBER IS : "+ number);
+
+
+var a = Math.round(number);
+document.write("<br>round of number<br>"+a);
+
+var b = Math.pow(3, 3);
+document.write("<br>power of number<br>"+b);
+
+var c = Math.sqrt(number);
+document.write("<br>square of number<br>"+c);
+
+var d = Math.floor(number);
+document.write("<br>floor of number<br>"+d);
+
+var e = Math.abs(number);
+document.write("<br>Absolute of number<br>"+e);
+
+var f = Math.ceil(number);
+document.write("<br>Round a Number '(ceil)' of number<br>"+f);
+
+var g = Math.min(5, number);
+document.write("<br>Minimum of number<br>"+g);
+
+var h = Math.max(number, 10);
+document.write("<br>Maximum of number<br>"+h);
+
+var i = Math.random();
+document.write("<br>Random  number<br>"+i);
+}
+
+
+</script>
+</body>
+
+</html>
